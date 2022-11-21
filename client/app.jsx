@@ -3,7 +3,7 @@ import * as React from "react";
 import {FrontPage} from "./pages/frontPage";
 import {MenuPage} from "./pages/menu";
 import {LoginPage} from "./pages/loginPage";
-//import {BrowserRouter as Router, Link, Route, Routes, useNavigate} from "react-router-dom"
+import {BrowserRouter as Router, Link, Route, Routes, useNavigate} from "react-router-dom"
 
 export function Navigate( path ){
     const navigate = useNavigate();

@@ -1,6 +1,6 @@
 import {useEffect, useState} from "react";
 import {Navigate} from "../app";
-//import {useNavigate} from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 
 function useLoading(loadingFunction){
     const [loading, setLoading] = useState(true);
