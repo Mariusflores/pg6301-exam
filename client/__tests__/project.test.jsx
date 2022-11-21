@@ -7,10 +7,10 @@ import {OtherPage} from "../pages/otherPage";
 describe("project", () => {
     it('shows other page', () => {
         const element = document.createElement("div");
-        render(<OtherPage/>, element)
+        render(<FrontPage/>, element)
 
         expect(element.querySelector("h1").innerHTML)
-            .toEqual("Welcome to the other page!");
+            .toEqual("Welcome to Kristiania Catering!");
         expect(element.innerHTML).toMatchSnapshot();
     });
 

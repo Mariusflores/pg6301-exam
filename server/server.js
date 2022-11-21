@@ -13,14 +13,14 @@ const app = express();
 
 
 //Login
-/*
+
 app.use(cookieParser(process.env.COOKIE_SECRET))
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
     extended: false
 }));
 
- */
+
 
 //Database connection
 const mongoClient = new MongoClient(process.env.MONGODB_URL);
@@ -30,7 +30,7 @@ mongoClient.connect().then(async () => {
 });
 
 // login
-/*
+
 app.use((req, res, next) => {
     const {username} = req.signedCookies;
     req.user = users.find(u => u.username === username);
@@ -79,7 +79,6 @@ app.get("/users", (req, res) => {
     res.json(users.map(({fullName, username}) => ({username, fullName}) ));
 })
 
- */
 
 app.use(express.static("../client/dist"))
 
