@@ -9,11 +9,10 @@ export function DishesApi(mongoDatabase) {
             .find()
             .toArray();
         res.json(dishes);
-        console.log("got from db")
     });
 
 
-    router.post("/new", (req, res) => {
+    router.post("/", (req, res) => {
         res.sendStatus(500);
     })
     return router;

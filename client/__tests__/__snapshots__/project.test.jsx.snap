@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`project shows front page 1`] = `"<div><h1>Welcome to the other page!</h1><p>Not much to do here either😂</p></div>"`;
+
+exports[`project shows other page 1`] = `"<div><h1>Welcome to the other page!</h1><p>Not much to do here either😂</p></div>"`;
