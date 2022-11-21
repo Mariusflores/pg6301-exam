@@ -2,11 +2,12 @@ import * as React from "react";
 import {BrowserRouter, Link, Route, Routes} from "react-router-dom";
 import {FrontPage} from "./pages/frontPage";
 import {OtherPage} from "./pages/otherPage";
+import {MenuPage} from "./pages/menu";
 
 function NavBar() {
     return <header id={"navbar"}>
         <div className={"link"}>
-            <Link to={"/other"}> Other page</Link>
+            <Link to={"/menu"}> Menu </Link>
         </div>
         <div className={"link"}>
             <Link to={"/"}>Home page</Link>
@@ -20,7 +21,7 @@ export function App() {
         <NavBar/>
         <Routes>
             <Route path={"/"} element={<FrontPage/>}/>
-            <Route path={"/other"} element={<OtherPage/>}/>
+            <Route path={"/menu"} element={<MenuPage/>}/>
         </Routes>
 
     </BrowserRouter>;

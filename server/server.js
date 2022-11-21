@@ -2,7 +2,7 @@ import express from "express"
 import * as path from "path";
 import dotenv from "dotenv"
 import {MongoClient} from "mongodb";
-import {DishesApi, MoviesApi} from "./restfulApi.js";
+import {DishesApi} from "./restfulApi.js";
 
 
 dotenv.config();
@@ -12,7 +12,8 @@ const app = express();
 const mongoClient = new MongoClient(process.env.MONGODB_URL);
 mongoClient.connect().then(async () => {
     console.log("Connected to mongodb")
-    app.use("/api/movies", MoviesApi(mongoClient.db("Catering")))
+    app.use("/api/dishes", DishesApi(mongoClient.db("Catering")))
+
 
 });
 
