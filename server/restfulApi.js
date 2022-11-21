@@ -1,4 +1,4 @@
-import {Router} from "express";
+import express, {Router} from "express";
 
 export function DishesApi(mongoDatabase) {
     const router = new Router();
@@ -13,7 +13,16 @@ export function DishesApi(mongoDatabase) {
 
 
     router.post("/", (req, res) => {
-        res.sendStatus(500);
+            const {title} = req.body;
+
+            mongoDatabase.collection("dishes").insertOne({title})
+            res.sendStatus(204);
+            console.log("dish added to database")
     })
     return router;
+}
+
+export function LoginApi(){
+
+   return null;
 }
