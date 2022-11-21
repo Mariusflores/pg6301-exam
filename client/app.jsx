@@ -1,9 +1,9 @@
 import * as React from "react";
-import {BrowserRouter as Router, Link, Route, Routes, useNavigate} from "react-router-dom";
+
 import {FrontPage} from "./pages/frontPage";
-import {OtherPage} from "./pages/otherPage";
 import {MenuPage} from "./pages/menu";
 import {LoginPage} from "./pages/loginPage";
+import {Route, BrowserRouter as Router, Routes, useNavigate, Link} from "react-router-dom";
 
 export function Navigate( path ){
     const navigate = useNavigate();

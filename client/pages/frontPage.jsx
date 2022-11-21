@@ -1,4 +1,3 @@
-import {Link, Router} from "react-router-dom";
 import * as React from "react";
 
 export function FrontPage() {
