@@ -1,5 +1,5 @@
 import * as React from "react";
-import {BrowserRouter, Link, Route, Routes, useNavigate} from "react-router-dom";
+import {BrowserRouter as Router, Link, Route, Routes, useNavigate} from "react-router-dom";
 import {FrontPage} from "./pages/frontPage";
 import {OtherPage} from "./pages/otherPage";
 import {MenuPage} from "./pages/menu";
@@ -31,7 +31,7 @@ function NavBar() {
 }
 
 export function App() {
-    return <BrowserRouter>
+    return <Router>
         <NavBar/>
         <Routes>
             <Route path={"/"} element={<FrontPage/>}/>
@@ -41,5 +41,5 @@ export function App() {
 
         </Routes>
 
-    </BrowserRouter>;
+    </Router>;
 }
