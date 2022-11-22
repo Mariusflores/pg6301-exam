@@ -17,3 +17,7 @@ body{
 .link:hover{
     background-color: antiquewhite;
 }
+.input{
+    display: flex;
+    flex-direction : column;
+}

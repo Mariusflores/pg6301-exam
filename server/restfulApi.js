@@ -7,18 +7,20 @@ export function DishesApi(mongoDatabase) {
     router.get("/", async (req, res) => {
         const dishes = await mongoDatabase.collection("dishes")
             .find()
+            .sort({title: 1})
             .toArray();
         res.json(dishes);
     });
 
 
     router.post("/", (req, res) => {
-            const {title} = req.body;
+            const {title, description} = req.body;
 
-            mongoDatabase.collection("dishes").insertOne({title})
+            mongoDatabase.collection("dishes").insertOne({title, description})
             res.sendStatus(204);
             console.log("dish added to database")
     })
+
     return router;
 }
 
