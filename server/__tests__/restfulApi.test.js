@@ -6,6 +6,7 @@ import {MongoClient} from "mongodb";
 import dotenv from "dotenv";
 dotenv.config();
 
+jest.setTimeout(30000);
 const app = express();
 app.use(bodyParser.json());
 
