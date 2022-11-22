@@ -22,13 +22,15 @@ afterAll(() => {
 
 describe("rest api", () => {
     it("adds a new dish", async () => {
-        jest.setTimeout(10000);
+
         const title = "my dish";
         const description = "some dish"
         await request(app)
+            console.log("adding dishes")
             .post("/api/dishes")
             .send({ title, description })
             .expect(200);
+        console.log("added dish")
         expect(
             (
                 await request(app).get("/api/dishes").expect(200)
