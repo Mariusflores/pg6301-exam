@@ -1,10 +1,6 @@
 ## PG6301 Exam 2022
 
 
-[![Node js CI](https://github.com/Mariusflores/pg6301-exam/actions/workflows/master_kristianiacatering.yml/badge.svg)](https://github.com/Mariusflores/pg6301-exam/actions/workflows/master_kristianiacatering.yml)
-
-
-
 Link to git repository: https://github.com/Mariusflores/pg6301-exam
  
  * CheckList
