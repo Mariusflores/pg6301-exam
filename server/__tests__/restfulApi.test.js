@@ -25,12 +25,12 @@ describe("rest api", () => {
 
         const title = "my dish";
         const description = "some dish"
+        console.log("adding to db")
         await request(app)
-            console.log("adding dishes")
             .post("/api/dishes")
             .send({ title, description })
             .expect(200);
-        console.log("added dish")
+        console.log("added to db")
         expect(
             (
                 await request(app).get("/api/dishes").expect(200)
