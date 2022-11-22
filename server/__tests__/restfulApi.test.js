@@ -22,6 +22,7 @@ afterAll(() => {
 
 describe("rest api", () => {
     it("adds a new dish", async () => {
+        jest.setTimeout(10000);
         const title = "my dish";
         const description = "some dish"
         await request(app)
