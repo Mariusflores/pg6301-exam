@@ -10,7 +10,9 @@ npm run dev - for developer mode
 npm run test - for running tests
 npm run test:coverage for running tests with coverage
 
-My api test does run locally on my computer but times out in github actions
+My restfulApi.test.jsx runs locally on my computer 
+but times out in github actions
+
 
 could not deploy to azure because disk was full
 ![Database diagram](images/img.png)
@@ -20,7 +22,7 @@ could not deploy to azure because disk was full
 * [x] Jest tests
 * [x] Snapshot tests
 * [ ] Simulate + jest.fn
-* [ ] Supertest
+* [x] Supertest
 * [x] Github Actions with coverage report
 * [x] Deployment to cloud (in this case, Azure)
 * [x] Mongodb
