@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cd client && jest",
+    "test:client": "cd client && npm run test",
+    "test:server": "cd server && npm run test",
+    "test": "npm run test:client",
     "dev": "concurrently npm:dev:client npm:dev:server",
     "dev:client": "cd client && npm run dev",
     "dev:server": "cd server && npm run dev",

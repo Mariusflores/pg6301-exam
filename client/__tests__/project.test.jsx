@@ -1,11 +1,10 @@
 import React from "react";
-
 import {render} from "react-dom";
 import {FrontPage} from "../pages/frontPage";
-import {OtherPage} from "../pages/otherPage";
+
 
 describe("project", () => {
-    it('shows other page', () => {
+    it('shows front page', () => {
         const element = document.createElement("div");
         render(<FrontPage/>, element)
 
