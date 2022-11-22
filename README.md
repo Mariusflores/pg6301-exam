@@ -2,7 +2,7 @@
 
 
 
-Link to git repository: https://github.com/Mariusflores/exam-pg6301
+Link to git repository: https://github.com/Mariusflores/pg6301-exam
 
  * CheckList
 * [ ] Some form of Login and access control
