@@ -1,8 +1,6 @@
 ## PG6301 Exam 2022
 
 
-
-
 Link to git repository: https://github.com/Mariusflores/pg6301-exam
  
  * CheckList
