@@ -2,4 +2,3 @@
 
 exports[`project shows front page 1`] = `"<div><h1>Welcome to Kristiania Catering!</h1></div>"`;
 
-exports[`project shows other page 1`] = `"<div><h1>Welcome to Kristiania Catering!</h1></div>"`;
