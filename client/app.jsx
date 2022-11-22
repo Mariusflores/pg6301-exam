@@ -3,7 +3,7 @@ import * as React from "react";
 import {FrontPage} from "./pages/frontPage";
 import {MenuPage} from "./pages/menu";
 import {LoginPage} from "./pages/loginPage";
-import {BrowserRouter as Router, Link, Route, Routes} from "react-router-dom";
+import { Link, Route, Routes} from "react-router-dom";
 
 function NavBar() {
     return <header id={"navbar"}>
