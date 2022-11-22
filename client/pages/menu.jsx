@@ -53,8 +53,6 @@ export function MenuPage(){
         </div>
 
     }
-
-
     return <div>
 
         <h1>Menu</h1>
