@@ -17,7 +17,7 @@ export function DishesApi(mongoDatabase) {
             const {title, description} = req.body;
 
             mongoDatabase.collection("dishes").insertOne({title, description})
-            res.sendStatus(204);
+            res.sendStatus(200);
             console.log("dish added to database")
     })
 

@@ -1,7 +1,14 @@
+import {ListDishes, FetchJson} from "../pages/listDishes";
+import * as  React from "react";
+import ReactDOM from "react-dom";
 
-describe("does something", () =>{
+describe("ListDishes component", () =>{
 
-    it('does something ',  () =>  {
+    it('shows loading screen ',
+        () => {
+            const domElement = document.createElement("div");
+            ReactDOM.render(<ListDishes/>, domElement);
+            expect(domElement.innerHTML).toMatchSnapshot();
+        });
 
-    });
 })

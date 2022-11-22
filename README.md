@@ -3,18 +3,22 @@
 
 Link to git repository: https://github.com/Mariusflores/pg6301-exam
  
+In 
+
+
+
  * CheckList
-* [ ] Some form of Login and access control
-* [ ] Jest tests
-* [ ] Snapshot tests
+* [x] Some form of Login and access control
+* [x] Jest tests
+* [x] Snapshot tests
 * [ ] Simulate + jest.fn
 * [ ] Supertest
 * [x] Github Actions with coverage report
-* [ ] Deployment to cloud (in this case, Azure)
+* [x] Deployment to cloud (in this case, Azure)
 * [x] Mongodb
 * [x] Navigating in the application using React Router (remember Express Middleware)
 * [x] Reading data from the server (remember error handling)
-* [ ] Writing data to the server
+* [x] Writing data to the server
 * [ ] Websockets
 
 
