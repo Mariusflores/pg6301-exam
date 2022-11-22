@@ -1,6 +1,4 @@
 import {useEffect, useState} from "react";
-import {Navigate} from "../app";
-import {useNavigate} from "react-router-dom";
 
 function useLoading(loadingFunction){
     const [loading, setLoading] = useState(true);
@@ -39,7 +37,6 @@ async function fetchJSON(url){
 
 export function MenuPage(){
 
-    const navigate = useNavigate();
     const [title, setTitle] = useState("");
 
     const {loading, error, data} = useLoading(

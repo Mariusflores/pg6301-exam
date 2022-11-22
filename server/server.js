@@ -37,6 +37,7 @@ app.use((req, res, next) => {
     //console.log("before")
     next();
     //console.log("after")
+
 });
 const users = [
 
@@ -70,14 +71,6 @@ app.post("/login", (req, res) => {
     }
 })
 
-app.get("/users", (req, res) => {
-    const cookieUsername = req.signedCookies.username;
-    const user = users.find(u => u.username === cookieUsername);
-    if (!req.user){
-        return res.sendStatus(401)
-    }
-    res.json(users.map(({fullName, username}) => ({username, fullName}) ));
-})
 
 
 app.use(express.static("../client/dist"))
