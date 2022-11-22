@@ -3,7 +3,7 @@ import * as React from "react";
 import {FrontPage} from "./pages/frontPage";
 import {MenuPage} from "./pages/menu";
 import {LoginPage} from "./pages/loginPage";
-import { Link, Route, Routes} from "react-router-dom";
+import {BrowserRouter as Router, Link, Route, Routes} from "react-router-dom";
 
 function NavBar() {
     return <header id={"navbar"}>
@@ -16,9 +16,7 @@ function NavBar() {
         <div className={"link"}>
             <Link to={"/login"}>Login</Link>
         </div>
-        <div className={"link"}>
-            <Link to={"/profile"}>Profile</Link>
-        </div>
+
 
 
     </header>;
